@@ -1,0 +1,136 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+  background: var(--preta);
+  font-family: "Arial", Times, serif;
+  color: white;
+}
+
+.container {
+  max-height: 100%;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px;
+}
+
+header .logo {
+  margin-left: 5px;
+  color: var(--vermelho);
+  font-family: "Arial Black", Times;
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+
+  font-size: 1.3rem;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/*filme principal*/
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("/img/capa-hp.jpg");
+
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+  margin-top: 5%;
+  font-size: 40px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: 0.3s ease all;
+
+  text-decoration: none;
+}
+
+.botao:hover {
+  background-color: white;
+  color: black;
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+
+  transition: transform 0.2s;
+}
+
+.box-filme:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+.carrosel-filmes {
+  margin-top: 5px;
+}
+
+.logo-img {
+  object-fit: cover;
+  object-position: left bottom;
+  transition: transform 500ms;
+}
+
+.logo-img:hover {
+  transform: rotateY(180deg);
+}
