@@ -1,5 +1,5 @@
 # ✨ POTERFLIX ✨
-## Página replicada do Netflix, com o tema do Harry Potter. 
+## Página replicada da Netflix, com o tema do Harry Potter. 
 
 ![print](docs/print.PNG)
 
